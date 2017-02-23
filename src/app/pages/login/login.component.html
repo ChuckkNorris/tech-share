@@ -1,0 +1,19 @@
+<container>
+<row>
+  <column sm="6" right>
+    <md-input-container>
+      <input mdInput placeholder="Email" [(ngModel)]="email">
+    </md-input-container>
+  </column>
+  <column sm="6">
+    <md-input-container>
+      <input type="password" mdInput placeholder="Password" [(ngModel)]="password">
+    </md-input-container>
+  </column>
+</row>
+<row>
+  <column sm="12" style="text-align: center">
+    <button (click)="login()" md-raised-button>Click me!</button>
+  </column>
+</row>
+</container>
