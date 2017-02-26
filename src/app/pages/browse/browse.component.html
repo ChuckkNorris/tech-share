@@ -1,3 +1,10 @@
-<p>
-  browse works!
-</p>
+<container>
+  <row>
+    <column *ngFor="let i of portfolioCount" 
+      xs="12" sm="6" md="4" xl="3"
+      style="padding-bottom: 20px;">
+    <app-portfolio-card > </app-portfolio-card>
+    </column>
+  </row>
+
+</container>

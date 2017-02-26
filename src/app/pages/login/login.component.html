@@ -1,11 +1,11 @@
 <container>
-<row>
-  <column sm="6" right>
+<row center>
+  <column xs="12" center>
     <md-input-container>
       <input mdInput placeholder="Email" [(ngModel)]="email">
     </md-input-container>
   </column>
-  <column sm="6">
+  <column xs="12" center>
     <md-input-container>
       <input type="password" mdInput placeholder="Password" [(ngModel)]="password">
     </md-input-container>
@@ -13,7 +13,7 @@
 </row>
 <row>
   <column sm="12" style="text-align: center">
-    <button (click)="login()" md-raised-button>Click me!</button>
+    <button (click)="login()" md-raised-button>Login</button>
   </column>
 </row>
 </container>

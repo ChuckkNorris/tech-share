@@ -17,6 +17,7 @@ import { SecurityService } from './services/security.service';
 import { AppRoutingModule } from './app-routing.module';
 import { SecurityDirective } from './directives/security.directive';
 import { AuthGuard } from './services/auth-guard.service';
+import { PortfolioCardComponent } from './templates/portfolio-card/portfolio-card.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AuthGuard } from './services/auth-guard.service';
     ProfileComponent,
     AdminComponent,
     AuthenticationErrorComponent,
-    SecurityDirective
+    SecurityDirective,
+    PortfolioCardComponent
   ],
   imports: [
     BrowserModule,
