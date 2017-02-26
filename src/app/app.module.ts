@@ -15,6 +15,9 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { AuthenticationErrorComponent } from './templates/authentication-error/authentication-error.component';
 import { SecurityService } from './services/security.service';
 import { AppRoutingModule } from './app-routing.module';
+import { SecurityDirective } from './directives/security.directive';
+import { AuthGuard } from './services/auth-guard.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowseComponent,
     ProfileComponent,
     AdminComponent,
-    AuthenticationErrorComponent
+    AuthenticationErrorComponent,
+    SecurityDirective
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,7 @@ import { AppRoutingModule } from './app-routing.module';
     MaterialModule.forRoot(),
     BootstrapGridModule.forRoot()
   ],
-  providers: [SecurityService],
+  providers: [SecurityService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

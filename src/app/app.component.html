@@ -2,9 +2,9 @@
     <md-toolbar color="accent">
       <nav md-tab-nav-bar>
         <a md-tab-link routerLink="/home" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">Home</a>
-        <a *ngIf="isAuthenticated()" md-tab-link routerLink="/browse" routerLinkActive      
+        <a md-tab-link routerLink="/browse" routerLinkActive      
            #rlab="routerLinkActive" [active]="rlab.isActive">Browse</a>
-        <a *ngIf="!isAuthenticated()" md-tab-link routerLink="/login"  routerLinkActive #rlac="routerLinkActive" [active]="rlac.isActive">Login</a>
+        <a md-tab-link routerLink="/login"  routerLinkActive #rlac="routerLinkActive" [active]="rlac.isActive">Login</a>
       </nav>
  </md-toolbar>
   <container>
