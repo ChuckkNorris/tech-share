@@ -1,9 +1,9 @@
 <md-card>
-  <md-card-title>Card Title</md-card-title>
-  <md-card-subtitle>My substible</md-card-subtitle>
-   <img md-card-image src="https://fortunedotcom.files.wordpress.com/2016/10/cropped-credera.jpg">
+  <md-card-title>{{item.title}}</md-card-title>
+  <md-card-subtitle>by {{item.author.firstName}}</md-card-subtitle>
+   <img md-card-image 
+    [src]="item.thumbnailUrl">
   <md-card-content>
-   
-    Want to see the cool stuff I built?
+    {{item.description}}
   </md-card-content>
 </md-card>

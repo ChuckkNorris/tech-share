@@ -1,9 +1,9 @@
 <container>
   <row>
-    <column *ngFor="let i of portfolioCount" 
+    <column *ngFor="let item of items" 
       xs="12" sm="6" md="4" xl="3"
       style="padding-bottom: 20px;">
-    <app-portfolio-card > </app-portfolio-card>
+    <app-portfolio-card [item]="item"> </app-portfolio-card>
     </column>
   </row>
 
